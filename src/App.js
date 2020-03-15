@@ -1,11 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { PolySynth } from "tone";
-import { Freeverb } from "tone";
 import axios from "axios";
 
 import './App.css';
-import { Input } from "./input";
 
 //Browsers do not like mouseHover for audio events.  
 
@@ -13,48 +10,70 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.countMyWords = this.countMyWords.bind(this);
-    this.phrase = "enter your phrase";
-    this.id = "enter an id";
-    this.total = 0;
+    this.state = {
+      id: 0,
+      phrase: 'enter a phrase to count words',
+      total: 0
+    };
+    this.handleIdChange = this.handleIdChange.bind(this);
+    this.handlePhraseChange = this.handlePhraseChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleIdChange(e) {
+    console.log(e);
+    this.setState({ id: e.target.value }); 
+   }
+
+
+  handlePhraseChange(e) {
+    this.setState({ phrase: e.target.value }); 
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    this.countMyWords();
   }
 
   async countMyWords() {
-    var phrase = {id:this.id, phrase:this.phrases};
+    var phrase = {id:this.state.id, phrase:this.state.phrase};
+    console.log('phrase, ', phrase)
 
     const response = await axios.post(
       'https://count-my-words.herokuapp.com//phrases//count',
-      { example: 'data' },
+      phrase,
       { headers: { 'Content-Type': 'application/json' } }
     )
-    this.total = response.data;
-    console.log(this.total)
-
+    this.setState({total: response.data});
+    console.log(this.state.total);
   }
 
   render() {
     
     return (
           <div>
-          <Input
-        id={1}
+      <form onSubmit={this.handleSubmit}>
+    
+        <input
+        id="id"
         label="ID"
-        predicted="California"
         locked={false}
         active={false}
-        value={this.id}
+        value={this.state.id}
+        onChange={this.handleIdChange}
           />
-         <Input
-        id={1}
+         <input
+        id="phrase"
         label="Phrase"
-        predicted="California"
         locked={false}
         active={false}
-        value={this.phrase}
+        value={this.state.phrase}
+        onChange={this.handlePhraseChange}
           />
-        <button onClick={this.countMyWords}>
-          Count
-        </button>
-        Your Total: {this.total}
+         <input type="submit" value="Count" />
+      </form>
+   
+        Your Total: {this.state.total}
       </div>
       
     );
