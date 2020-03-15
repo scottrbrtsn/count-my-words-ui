@@ -1,4 +1,4 @@
-GOTO scottrbrtsn.github.io/react-ui/ to see live
+GOTO scottrbrtsn.github.io/count-my-words-ui/ to see live
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
