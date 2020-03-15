@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/count-my-words-ui/precache-manifest.9de11c72c25fd02e6bc71760d26f4cae.js"
+  "/count-my-words-ui/precache-manifest.f9213e7b2a0ed6f9de5be037b26c80c4.js"
 );
 
 self.addEventListener('message', (event) => {

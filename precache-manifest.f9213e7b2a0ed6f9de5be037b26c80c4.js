@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8448481ab13486ed2899a98d21cfb05d",
+    "revision": "1bbf1dda7a542c73f167fbf4eb9ea6ba",
     "url": "/count-my-words-ui/index.html"
   },
   {
-    "revision": "c0521cbc726810e01a7c",
+    "revision": "a14efd38e06236a3b0ed",
     "url": "/count-my-words-ui/static/css/main.6f6e6596.chunk.css"
   },
   {
-    "revision": "ae1d057a3177196bd640",
-    "url": "/count-my-words-ui/static/js/2.37c4688a.chunk.js"
+    "revision": "807d54d971e16c0707cb",
+    "url": "/count-my-words-ui/static/js/2.65306d29.chunk.js"
   },
   {
     "revision": "99bd0487192ec9e7d9ee8fbbd91ee444",
-    "url": "/count-my-words-ui/static/js/2.37c4688a.chunk.js.LICENSE.txt"
+    "url": "/count-my-words-ui/static/js/2.65306d29.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c0521cbc726810e01a7c",
-    "url": "/count-my-words-ui/static/js/main.df441823.chunk.js"
+    "revision": "a14efd38e06236a3b0ed",
+    "url": "/count-my-words-ui/static/js/main.04c1677a.chunk.js"
   },
   {
     "revision": "aeddff232fef5ff5afe2",
