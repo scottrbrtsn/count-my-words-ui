@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ec496f707a2ffb749c67b6513c64323e",
+    "revision": "0098482be97cc2194222ebf759fb5ee1",
     "url": "/count-my-words-ui/index.html"
   },
   {
-    "revision": "8c99b98b3b3e26f58b22",
+    "revision": "fdf3a4732ed91605bf98",
     "url": "/count-my-words-ui/static/css/main.6f6e6596.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/count-my-words-ui/static/js/2.65306d29.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8c99b98b3b3e26f58b22",
-    "url": "/count-my-words-ui/static/js/main.8efef949.chunk.js"
+    "revision": "fdf3a4732ed91605bf98",
+    "url": "/count-my-words-ui/static/js/main.556ed0a2.chunk.js"
   },
   {
     "revision": "aeddff232fef5ff5afe2",
