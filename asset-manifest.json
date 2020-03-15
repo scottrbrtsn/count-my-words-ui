@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/count-my-words-ui/static/css/main.6f6e6596.chunk.css",
+    "main.js": "/count-my-words-ui/static/js/main.b2661e97.chunk.js",
+    "main.js.map": "/count-my-words-ui/static/js/main.b2661e97.chunk.js.map",
+    "runtime-main.js": "/count-my-words-ui/static/js/runtime-main.91985b06.js",
+    "runtime-main.js.map": "/count-my-words-ui/static/js/runtime-main.91985b06.js.map",
+    "static/js/2.2eafbb43.chunk.js": "/count-my-words-ui/static/js/2.2eafbb43.chunk.js",
+    "static/js/2.2eafbb43.chunk.js.map": "/count-my-words-ui/static/js/2.2eafbb43.chunk.js.map",
+    "index.html": "/count-my-words-ui/index.html",
+    "precache-manifest.24163e322d559e0c93773a49f3fa7a70.js": "/count-my-words-ui/precache-manifest.24163e322d559e0c93773a49f3fa7a70.js",
+    "service-worker.js": "/count-my-words-ui/service-worker.js",
+    "static/css/main.6f6e6596.chunk.css.map": "/count-my-words-ui/static/css/main.6f6e6596.chunk.css.map",
+    "static/js/2.2eafbb43.chunk.js.LICENSE.txt": "/count-my-words-ui/static/js/2.2eafbb43.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91985b06.js",
+    "static/js/2.2eafbb43.chunk.js",
+    "static/css/main.6f6e6596.chunk.css",
+    "static/js/main.b2661e97.chunk.js"
+  ]
+}
