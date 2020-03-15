@@ -13,7 +13,8 @@ export default class App extends React.Component {
     this.state = {
       id: 'enter your id',
       phrase: 'enter a phrase to count words',
-      total: 0
+      total: 0,
+      active: (props.locked && props.active) || false
     };
     this.handleIdChange = this.handleIdChange.bind(this);
     this.handlePhraseChange = this.handlePhraseChange.bind(this);
@@ -68,18 +69,11 @@ export default class App extends React.Component {
   }
 
   newInput(changeFunc, val, id) {
-    const { active, value, error, label } = this.state;
-    const { predicted, locked } = this.props;
-    const fieldClassName = `field ${(locked ? active : active || value) &&
-      "active"} ${locked && !active && "locked"}`;
-
     return (
-      <div className={fieldClassName}>
+      <div className="field">
         <input
           id={id}
           label={id}
-          locked={false}
-          active={false}
           value={val}
           onChange={changeFunc}
         />
