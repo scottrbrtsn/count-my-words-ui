@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/count-my-words-ui/static/css/main.6f6e6596.chunk.css",
-    "main.js": "/count-my-words-ui/static/js/main.dc5d7ea7.chunk.js",
-    "main.js.map": "/count-my-words-ui/static/js/main.dc5d7ea7.chunk.js.map",
+    "main.js": "/count-my-words-ui/static/js/main.df441823.chunk.js",
+    "main.js.map": "/count-my-words-ui/static/js/main.df441823.chunk.js.map",
     "runtime-main.js": "/count-my-words-ui/static/js/runtime-main.91985b06.js",
     "runtime-main.js.map": "/count-my-words-ui/static/js/runtime-main.91985b06.js.map",
     "static/js/2.37c4688a.chunk.js": "/count-my-words-ui/static/js/2.37c4688a.chunk.js",
     "static/js/2.37c4688a.chunk.js.map": "/count-my-words-ui/static/js/2.37c4688a.chunk.js.map",
     "index.html": "/count-my-words-ui/index.html",
-    "precache-manifest.c9472e6aed1fc336229073c7d4de0e46.js": "/count-my-words-ui/precache-manifest.c9472e6aed1fc336229073c7d4de0e46.js",
+    "precache-manifest.9de11c72c25fd02e6bc71760d26f4cae.js": "/count-my-words-ui/precache-manifest.9de11c72c25fd02e6bc71760d26f4cae.js",
     "service-worker.js": "/count-my-words-ui/service-worker.js",
     "static/css/main.6f6e6596.chunk.css.map": "/count-my-words-ui/static/css/main.6f6e6596.chunk.css.map",
     "static/js/2.37c4688a.chunk.js.LICENSE.txt": "/count-my-words-ui/static/js/2.37c4688a.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.91985b06.js",
     "static/js/2.37c4688a.chunk.js",
     "static/css/main.6f6e6596.chunk.css",
-    "static/js/main.dc5d7ea7.chunk.js"
+    "static/js/main.df441823.chunk.js"
   ]
 }
