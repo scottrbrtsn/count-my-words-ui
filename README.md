@@ -1,5 +1,16 @@
+# count-my-words-ui
 GOTO scottrbrtsn.github.io/count-my-words-ui/ to see live
 
+This is a basic UI to assist in demonstrating the second half of this exercise.  In Agile/Scrum we typically break up stories into small, vertical slices:  the top being the UI interaction (typically a button click), and the botto typically as deep as the database.  
+
+3. As a user I want to be able to type a word or phrase into a web browser and it tell me how many words are in the phrase so that I don't have to count.
+
+4. As a user I want to be able to log into a public facing web page (production env) and type my word or phrase so that I don't have to run it locally. 
+
+## TODO
+1. Convert to TS
+
+## React App notes (auto-generated)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

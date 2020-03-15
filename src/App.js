@@ -11,23 +11,24 @@ export default class App extends React.Component {
     super(props);
     this.countMyWords = this.countMyWords.bind(this);
     this.state = {
-      id: 0,
+      id: 'enter your id',
       phrase: 'enter a phrase to count words',
       total: 0
     };
     this.handleIdChange = this.handleIdChange.bind(this);
     this.handlePhraseChange = this.handlePhraseChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.newInput = this.newInput.bind(this);
   }
 
   handleIdChange(e) {
     console.log(e);
-    this.setState({ id: e.target.value }); 
-   }
+    this.setState({ id: e.target.value });
+  }
 
 
   handlePhraseChange(e) {
-    this.setState({ phrase: e.target.value }); 
+    this.setState({ phrase: e.target.value });
   }
 
   handleSubmit(event) {
@@ -36,7 +37,7 @@ export default class App extends React.Component {
   }
 
   async countMyWords() {
-    var phrase = {id:this.state.id, phrase:this.state.phrase};
+    var phrase = { id: this.state.id, phrase: this.state.phrase };
     console.log('phrase, ', phrase)
 
     const response = await axios.post(
@@ -44,40 +45,47 @@ export default class App extends React.Component {
       phrase,
       { headers: { 'Content-Type': 'application/json' } }
     )
-    this.setState({total: response.data});
+    this.setState({ total: response.data });
     console.log(this.state.total);
   }
 
   render() {
-    
+
     return (
-          <div>
-      <form onSubmit={this.handleSubmit}>
-    
-        <input
-        id="id"
-        label="ID"
-        locked={false}
-        active={false}
-        value={this.state.id}
-        onChange={this.handleIdChange}
-          />
-         <input
-        id="phrase"
-        label="Phrase"
-        locked={false}
-        active={false}
-        value={this.state.phrase}
-        onChange={this.handlePhraseChange}
-          />
-         <input type="submit" value="Count" />
-      </form>
-   
-        Your Total: {this.state.total}
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          {this.newInput(this.handleIdChange, this.state.id, "ID")}
+          {this.newInput(this.handlePhraseChange, this.state.phrase, "PHRASE")}
+          <input className="submit" type="submit" value="Count" />
+        </form>
+        <div className="text">
+          Your Total: {this.state.total}
+        </div>
       </div>
-      
+
     );
+
   }
+
+  newInput(changeFunc, val, id) {
+    const { active, value, error, label } = this.state;
+    const { predicted, locked } = this.props;
+    const fieldClassName = `field ${(locked ? active : active || value) &&
+      "active"} ${locked && !active && "locked"}`;
+
+    return (
+      <div className={fieldClassName}>
+        <input
+          id={id}
+          label={id}
+          locked={false}
+          active={false}
+          value={val}
+          onChange={changeFunc}
+        />
+      </div>
+    )
+  };
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
